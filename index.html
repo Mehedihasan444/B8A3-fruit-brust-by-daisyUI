@@ -1,17 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme='light'>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B8A3-fruit-brust-by-daisyUI</title>
-</head>
-<body>
-    <header>
 
+    <!-- DaisyUI links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/bf4e20c3c1.js" crossorigin="anonymous"></script>
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- styles -->
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <!--navbar  -->
+        <nav class="max-w-screen-xl mx-auto mt-12">
+            <div class="navbar bg-base-100 flex justify-between items-center  bg-primary-color border-2 rounded-[50px] text-white">
+                
+                <div class="navbar-end hidden lg:flex flex-1">
+
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                
+                <div class="flex-1 lg:justify-center">
+                    <a class="btn btn-ghost normal-case text-xl lg:text-3xl"><img class="w-7" src="./images/logo.png" alt="">
+                        <h2>Fruit Burst</h2>
+                    </a>
+                </div>
+                
+                <div class="navbar-end hidden lg:block  flex-1 ">
+                    <div class="form-control w-80 ">
+                        <input type="text" placeholder="Search here" class="input rounded-[50px] bg-white pl-7  input-bordered  md:w-auto" />
+                    </div>
+                </div>
+                 
+                
+                    <div class="dropdown lg:hidden">
+                        <label tabindex="0" class="btn btn-ghost">
+                           
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box text-right text-black -ml-16">
+                            <li><a>Home</a></li>
+
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+
+               
+            </div>
+        </nav>
+        <!-- slider section -->
+        <section>
+
+            
+        </section>
     </header>
-    <main>  
+    <!-- main  section -->
+    <main>
 
     </main>
-    
+
 </body>
+
 </html>
