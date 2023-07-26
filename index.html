@@ -41,9 +41,9 @@
 
 <body>
     <!-- header section -->
-    <header class="max-w-screen-xl mx-auto">
+    <header class="max-w-screen-xl mx-auto md:mt-5">
         <!--navbar  -->
-        <nav class=" lg:mt-12 md:mx-10">
+        <nav class="  md:mx-10">
             <div
                 class="navbar bg-base-100 flex justify-between items-center  md:bg-primary-color md:border-2 rounded-[50px] md:text-white">
 
@@ -54,7 +54,7 @@
 
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
+                        <!-- <li><a>All Fruits</a></li> -->
                     </ul>
                 </div>
 
@@ -95,7 +95,7 @@
         </nav>
         <!-- slider section -->
         <section class="mt-5 md:mt-12  md:mb-48 md:px-12">
-           
+
             <div class="relative mx-5 md:mx-0 ">
                 <div class="carousel w-full rounded-lg h-[250px] md:h-full">
                     <div id="slide1" class="carousel-item relative w-full h-[250px] md:h-full">
@@ -107,7 +107,8 @@
                         </div>
                         <div
                             class="absolute text-center md:top-7 lg:top-12 md:right-70 md:left-70  top-7 bottom-2 right-14 left-14 md:space-y-3">
-                            <h1 class="md:text-5xl lg:text-7xl text-2xl font-extrabold font-lato  text-white">Exotic tastes at your
+                            <h1 class="md:text-5xl lg:text-7xl text-2xl font-extrabold font-lato  text-white">Exotic
+                                tastes at your
                                 <br>
                                 doorstep
                             </h1>
@@ -131,7 +132,8 @@
 
                         <div
                             class="absolute text-center md:top-7 lg:top-12 md:right-70 md:left-70  top-7 bottom-2 right-14 left-14 md:space-y-3">
-                            <h1 class="md:text-5xl lg:text-7xl text-2xl font-extrabold font-lato  text-white">Exotic tastes at your
+                            <h1 class="md:text-5xl lg:text-7xl text-2xl font-extrabold font-lato  text-white">Exotic
+                                tastes at your
                                 <br>
                                 doorstep
                             </h1>
@@ -156,7 +158,8 @@
 
                         <div
                             class="absolute text-center md:top-7 lg:top-12 md:right-70 md:left-70  top-7 bottom-2 right-14 left-14 md:space-y-3">
-                            <h1 class="md:text-5xl lg:text-7xl text-2xl font-extrabold font-lato  text-white">Exotic tastes at your
+                            <h1 class="md:text-5xl lg:text-7xl text-2xl font-extrabold font-lato  text-white">Exotic
+                                tastes at your
                                 <br>
                                 doorstep
                             </h1>
@@ -180,18 +183,19 @@
                         </div>
 
                         <div
-                        class="absolute text-center md:top-7 lg:top-12 md:right-70 md:left-70  top-7 bottom-2 right-14 left-14 md:space-y-3">
-                        <h1 class="md:text-5xl lg:text-7xl text-2xl font-extrabold font-lato  text-white">Exotic tastes at your
-                            <br>
-                            doorstep
-                        </h1>
-                        <p class="lg:text-lg text-sm font-normal  text-white">We supply highly quality organic
-                            products
-                        </p>
-                        <button
-                            class="btn  btn-sm md:btn-md lg:btn-md bg-primary-color text-white border-primary-color text-xs md:text-base lg:text-xl mt-2 md:mt-7">Shop
-                            Now</button>
-                    </div>
+                            class="absolute text-center md:top-7 lg:top-12 md:right-70 md:left-70  top-7 bottom-2 right-14 left-14 md:space-y-3">
+                            <h1 class="md:text-5xl lg:text-7xl text-2xl font-extrabold font-lato  text-white">Exotic
+                                tastes at your
+                                <br>
+                                doorstep
+                            </h1>
+                            <p class="lg:text-lg text-sm font-normal  text-white">We supply highly quality organic
+                                products
+                            </p>
+                            <button
+                                class="btn  btn-sm md:btn-md lg:btn-md bg-primary-color text-white border-primary-color text-xs md:text-base lg:text-xl mt-2 md:mt-7">Shop
+                                Now</button>
+                        </div>
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide3" class="btn btn-circle">❮</a>
                             <a href="#slide1" class="btn btn-circle">❯</a>
@@ -313,9 +317,54 @@
                                 </svg>
                             </div>
                             <div class="card-actions">
-                                <a href="" class="text-[#F85559]">
+                                <a class="text-[#F85559] cursor-pointer" onclick="my_modal_4.showModal()">
                                     Details
                                 </a>
+                                <!-- Open the modal using ID.showModal() method -->
+                            
+                                <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle ">
+                                    <form method="dialog" class="modal-box">
+                                        <div class="card  bg-base-100 space-y-3">
+                                            <figure class="px-10 pt-10">
+                                                <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                            </figure>
+                                            <div class="card-body items-center text-center">
+                                                <h2 class="card-title font-extrabold">Apples</h2>
+                                                <p>Professional employees are there for you to pick the most amazing and
+                                                    fresh fruits.</p>
+                                                <div class="rating my-5">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24"
+                                                        viewBox="0 0 160 24" fill="none">
+                                                        <path
+                                                            d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                                                            fill="#F85559" />
+                                                        <path
+                                                            d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                                                            fill="#F85559" />
+                                                        <path
+                                                            d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                                                            fill="#FBC0A8" />
+                                                    </svg>
+                                                </div>
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <div class=" flex gap-5 ">
+                                                    <button
+                                                        class="btn border-2 rounded-lg border-[#F85559] bg-white text-[#F85559] btn-active">Close</button>
+                                                    <button class="btn bg-[#F85559] text-white ">Buy Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dialog>
                             </div>
                         </div>
                     </div>
@@ -328,7 +377,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">12.90$ - 18.85$</h2>
-                            <p>Apples</p>
+                            <p>Orange</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24"
                                     fill="none">
@@ -353,9 +402,54 @@
                                 </svg>
                             </div>
                             <div class="card-actions">
-                                <a href="" class="text-[#F85559]">
+                                <a class="text-[#F85559] cursor-pointer" onclick="my_modal_3.showModal()">
                                     Details
                                 </a>
+                                <!-- Open the modal using ID.showModal() method -->
+                            
+                                <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle ">
+                                    <form method="dialog" class="modal-box">
+                                        <div class="card  bg-base-100 space-y-3">
+                                            <figure class="px-10 pt-10">
+                                                <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                                            </figure>
+                                            <div class="card-body items-center text-center">
+                                                <h2 class="card-title font-extrabold">Orange</h2>
+                                                <p>Professional employees are there for you to pick the most amazing and
+                                                    fresh fruits.</p>
+                                                <div class="rating my-5">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24"
+                                                        viewBox="0 0 160 24" fill="none">
+                                                        <path
+                                                            d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                                                            fill="#F85559" />
+                                                        <path
+                                                            d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                                                            fill="#F85559" />
+                                                        <path
+                                                            d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                                                            fill="#FBC0A8" />
+                                                    </svg>
+                                                </div>
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <div class=" flex gap-5 ">
+                                                    <button
+                                                        class="btn border-2 rounded-lg border-[#F85559] bg-white text-[#F85559] btn-active">Close</button>
+                                                    <button class="btn bg-[#F85559] text-white ">Buy Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dialog>
                             </div>
                         </div>
                     </div>
@@ -368,7 +462,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">12.90$ - 18.85$</h2>
-                            <p>Apples</p>
+                            <p>Red Dragon</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24"
                                     fill="none">
@@ -393,9 +487,54 @@
                                 </svg>
                             </div>
                             <div class="card-actions">
-                                <a href="" class="text-[#F85559]">
+                                <a class="text-[#F85559] cursor-pointer" onclick="my_modal_2.showModal()">
                                     Details
                                 </a>
+                                <!-- Open the modal using ID.showModal() method -->
+                            
+                                <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle ">
+                                    <form method="dialog" class="modal-box">
+                                        <div class="card  bg-base-100 space-y-3">
+                                            <figure class="px-10 pt-10">
+                                                <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                                            </figure>
+                                            <div class="card-body items-center text-center">
+                                                <h2 class="card-title font-extrabold">Red Dragon</h2>
+                                                <p>Professional employees are there for you to pick the most amazing and
+                                                    fresh fruits.</p>
+                                                <div class="rating my-5">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24"
+                                                        viewBox="0 0 160 24" fill="none">
+                                                        <path
+                                                            d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                                                            fill="#F85559" />
+                                                        <path
+                                                            d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                                                            fill="#F85559" />
+                                                        <path
+                                                            d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                                                            fill="#FBC0A8" />
+                                                    </svg>
+                                                </div>
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <div class=" flex gap-5 ">
+                                                    <button
+                                                        class="btn border-2 rounded-lg border-[#F85559] bg-white text-[#F85559] btn-active">Close</button>
+                                                    <button class="btn bg-[#F85559] text-white ">Buy Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dialog>
                             </div>
                         </div>
                     </div>
@@ -408,7 +547,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">12.90$ - 18.85$</h2>
-                            <p>Apples</p>
+                            <p>Banana</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24"
                                     fill="none">
@@ -433,9 +572,54 @@
                                 </svg>
                             </div>
                             <div class="card-actions">
-                                <a href="" class="text-[#F85559]">
+                                <a class="text-[#F85559] cursor-pointer" onclick="my_modal_1.showModal()">
                                     Details
                                 </a>
+                                <!-- Open the modal using ID.showModal() method -->
+                            
+                                <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle ">
+                                    <form method="dialog" class="modal-box">
+                                        <div class="card  bg-base-100 space-y-3">
+                                            <figure class="px-10 pt-10">
+                                                <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                            </figure>
+                                            <div class="card-body items-center text-center">
+                                                <h2 class="card-title font-extrabold">Banana</h2>
+                                                <p>Professional employees are there for you to pick the most amazing and
+                                                    fresh fruits.</p>
+                                                <div class="rating my-5">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24"
+                                                        viewBox="0 0 160 24" fill="none">
+                                                        <path
+                                                            d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                                                            fill="#F85559" />
+                                                        <path
+                                                            d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                                                            fill="#F85559" />
+                                                        <path
+                                                            d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                                                            fill="#FBC0A8" />
+                                                        <path
+                                                            d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                                                            fill="#FBC0A8" />
+                                                    </svg>
+                                                </div>
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <div class=" flex gap-5 ">
+                                                    <button
+                                                        class="btn border-2 rounded-lg border-[#F85559] bg-white text-[#F85559] btn-active">Close</button>
+                                                    <button class="btn bg-[#F85559] text-white ">Buy Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dialog>
                             </div>
                         </div>
                     </div>
@@ -906,7 +1090,7 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="footer footer-center  bg-black text-primary-content mt-20 text-white pt-7">
+    <footer class="footer footer-center  bg-black text-primary-content mt-20 text-white py-7 pb-7">
         <div class="">
             <a class="btn btn-ghost normal-case text-xl lg:text-3xl"><img class="w-7" src="./images/logo.png" alt="">
                 <h2 class="font-lato">Fruit Burst</h2>
