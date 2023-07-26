@@ -45,27 +45,27 @@
         <!--navbar  -->
         <nav class="  md:mx-10">
             <div
-                class="navbar bg-base-100 flex justify-between items-center  md:bg-primary-color md:border-2 rounded-[50px] md:text-white">
+                class="navbar bg-base-100 grid grid-cols-[1fr_1fr] lg:grid-cols-[1.25fr_1fr_1fr] justify-between items-center  md:bg-primary-color md:border-2 rounded-[50px] md:text-white">
 
-                <div class="navbar-end hidden lg:flex flex-1">
+                <div class=" hidden lg:flex lg:justify-start ">
 
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
 
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
-                        <!-- <li><a>All Fruits</a></li> -->
+                        <li><a>All Fruits</a></li>
                     </ul>
                 </div>
 
-                <div class="flex-1 lg:justify-center">
+                <div class=" lg:justify-center">
                     <a class="btn btn-ghost normal-case text-xl lg:text-3xl"><img class="w-7" src="./images/logo.png"
                             alt="">
                         <h2>Fruit Burst</h2>
                     </a>
                 </div>
 
-                <div class="navbar-end hidden lg:block  flex-1 ">
+                <div class=" hidden lg:flex lg:justify-end ">
                     <div class="form-control w-70 flex relative">
                         <input type="text" placeholder="Search here"
                             class="input rounded-[50px] bg-white pl-7  input-bordered  md:w-auto" />
@@ -75,7 +75,7 @@
                 </div>
 
 
-                <div class="dropdown lg:hidden">
+                <div class="dropdown lg:hidden flex justify-end">
                     <label tabindex="0" class="btn btn-ghost">
 
                         <i class="fa-solid fa-bars"></i>
